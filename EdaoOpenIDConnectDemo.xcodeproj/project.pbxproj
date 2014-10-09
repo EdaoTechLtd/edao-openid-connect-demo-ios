@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8BBE443E19A723FD00D1E518 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BBE443D19A723FD00D1E518 /* Foundation.framework */; };
+		8BBE444019A723FD00D1E518 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BBE443F19A723FD00D1E518 /* CoreGraphics.framework */; };
+		8BBE444219A723FD00D1E518 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BBE444119A723FD00D1E518 /* UIKit.framework */; };
+		8BBE444819A723FD00D1E518 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8BBE444619A723FD00D1E518 /* InfoPlist.strings */; };
+		8BBE444A19A723FD00D1E518 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BBE444919A723FD00D1E518 /* main.m */; };
+		8BBE444E19A723FD00D1E518 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BBE444D19A723FD00D1E518 /* AppDelegate.m */; };
+		8BBE445119A723FD00D1E518 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BBE444F19A723FD00D1E518 /* Main.storyboard */; };
+		8BBE445619A723FD00D1E518 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BBE445519A723FD00D1E518 /* Images.xcassets */; };
+		8BBE445D19A723FD00D1E518 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BBE445C19A723FD00D1E518 /* XCTest.framework */; };
+		8BBE445E19A723FD00D1E518 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BBE443D19A723FD00D1E518 /* Foundation.framework */; };
+		8BBE445F19A723FD00D1E518 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BBE444119A723FD00D1E518 /* UIKit.framework */; };
+		8BBE446719A723FD00D1E518 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8BBE446519A723FD00D1E518 /* InfoPlist.strings */; };
+		8BBE446919A723FD00D1E518 /* EdaoOpenIDConnectDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BBE446819A723FD00D1E518 /* EdaoOpenIDConnectDemoTests.m */; };
+		8BC7DC1519AC2A6D00247713 /* EdaoOpenIDConnectSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC7DC1119AC2A6D00247713 /* EdaoOpenIDConnectSDK.a */; };
+		8BC7DC4419AC63E500247713 /* btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BC7DC4119AC63E500247713 /* btn.png */; };
+		8BC7DC4519AC63E500247713 /* demo1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BC7DC4219AC63E500247713 /* demo1.png */; };
+		8BC7DC4619AC63E500247713 /* demo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BC7DC4319AC63E500247713 /* demo2.png */; };
+		8BC7DC4919AC642900247713 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC7DC4819AC642900247713 /* MasterViewController.m */; };
+		8BC7DC4C19AC643700247713 /* DoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC7DC4B19AC643700247713 /* DoneViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8BBE446019A723FD00D1E518 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BBE443219A723FD00D1E518 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BBE443919A723FD00D1E518;
+			remoteInfo = EdaoOpenIDConnectDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8BBE443A19A723FD00D1E518 /* EdaoOpenIDConnectDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EdaoOpenIDConnectDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BBE443D19A723FD00D1E518 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8BBE443F19A723FD00D1E518 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8BBE444119A723FD00D1E518 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8BBE444519A723FD00D1E518 /* EdaoOpenIDConnectDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EdaoOpenIDConnectDemo-Info.plist"; sourceTree = "<group>"; };
+		8BBE444719A723FD00D1E518 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8BBE444919A723FD00D1E518 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8BBE444B19A723FD00D1E518 /* EdaoOpenIDConnectDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EdaoOpenIDConnectDemo-Prefix.pch"; sourceTree = "<group>"; };
+		8BBE444C19A723FD00D1E518 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8BBE444D19A723FD00D1E518 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8BBE445019A723FD00D1E518 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8BBE445519A723FD00D1E518 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8BBE445B19A723FD00D1E518 /* EdaoOpenIDConnectDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EdaoOpenIDConnectDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BBE445C19A723FD00D1E518 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		8BBE446419A723FD00D1E518 /* EdaoOpenIDConnectDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EdaoOpenIDConnectDemoTests-Info.plist"; sourceTree = "<group>"; };
+		8BBE446619A723FD00D1E518 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8BBE446819A723FD00D1E518 /* EdaoOpenIDConnectDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EdaoOpenIDConnectDemoTests.m; sourceTree = "<group>"; };
+		8BC7DC1119AC2A6D00247713 /* EdaoOpenIDConnectSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = EdaoOpenIDConnectSDK.a; path = "../../../bin/Debug-iphoneos/EdaoOpenIDConnectSDK.a"; sourceTree = "<group>"; };
+		8BC7DC1419AC2A6D00247713 /* EdaoOpenIDConnectSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EdaoOpenIDConnectSDK.h; sourceTree = "<group>"; };
+		8BC7DC4119AC63E500247713 /* btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn.png; sourceTree = "<group>"; };
+		8BC7DC4219AC63E500247713 /* demo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = demo1.png; sourceTree = "<group>"; };
+		8BC7DC4319AC63E500247713 /* demo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = demo2.png; sourceTree = "<group>"; };
+		8BC7DC4719AC642900247713 /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		8BC7DC4819AC642900247713 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		8BC7DC4A19AC643700247713 /* DoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoneViewController.h; sourceTree = "<group>"; };
+		8BC7DC4B19AC643700247713 /* DoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoneViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8BBE443719A723FD00D1E518 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BBE444019A723FD00D1E518 /* CoreGraphics.framework in Frameworks */,
+				8BC7DC1519AC2A6D00247713 /* EdaoOpenIDConnectSDK.a in Frameworks */,
+				8BBE444219A723FD00D1E518 /* UIKit.framework in Frameworks */,
+				8BBE443E19A723FD00D1E518 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BBE445819A723FD00D1E518 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BBE445D19A723FD00D1E518 /* XCTest.framework in Frameworks */,
+				8BBE445F19A723FD00D1E518 /* UIKit.framework in Frameworks */,
+				8BBE445E19A723FD00D1E518 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8BBE443119A723FD00D1E518 = {
+			isa = PBXGroup;
+			children = (
+				8BBE444319A723FD00D1E518 /* EdaoOpenIDConnectDemo */,
+				8BBE446219A723FD00D1E518 /* EdaoOpenIDConnectDemoTests */,
+				8BBE443C19A723FD00D1E518 /* Frameworks */,
+				8BBE443B19A723FD00D1E518 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8BBE443B19A723FD00D1E518 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8BBE443A19A723FD00D1E518 /* EdaoOpenIDConnectDemo.app */,
+				8BBE445B19A723FD00D1E518 /* EdaoOpenIDConnectDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8BBE443C19A723FD00D1E518 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BBE443D19A723FD00D1E518 /* Foundation.framework */,
+				8BBE443F19A723FD00D1E518 /* CoreGraphics.framework */,
+				8BBE444119A723FD00D1E518 /* UIKit.framework */,
+				8BBE445C19A723FD00D1E518 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8BBE444319A723FD00D1E518 /* EdaoOpenIDConnectDemo */ = {
+			isa = PBXGroup;
+			children = (
+				8BC7DC4019AC63E500247713 /* Resources */,
+				8BC7DC1019AC2A5B00247713 /* EdaoOpenIDConnectSDK */,
+				8BBE444C19A723FD00D1E518 /* AppDelegate.h */,
+				8BBE444D19A723FD00D1E518 /* AppDelegate.m */,
+				8BBE444F19A723FD00D1E518 /* Main.storyboard */,
+				8BBE445519A723FD00D1E518 /* Images.xcassets */,
+				8BBE444419A723FD00D1E518 /* Supporting Files */,
+				8BC7DC4719AC642900247713 /* MasterViewController.h */,
+				8BC7DC4819AC642900247713 /* MasterViewController.m */,
+				8BC7DC4A19AC643700247713 /* DoneViewController.h */,
+				8BC7DC4B19AC643700247713 /* DoneViewController.m */,
+			);
+			path = EdaoOpenIDConnectDemo;
+			sourceTree = "<group>";
+		};
+		8BBE444419A723FD00D1E518 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8BBE444519A723FD00D1E518 /* EdaoOpenIDConnectDemo-Info.plist */,
+				8BBE444619A723FD00D1E518 /* InfoPlist.strings */,
+				8BBE444919A723FD00D1E518 /* main.m */,
+				8BBE444B19A723FD00D1E518 /* EdaoOpenIDConnectDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8BBE446219A723FD00D1E518 /* EdaoOpenIDConnectDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				8BBE446819A723FD00D1E518 /* EdaoOpenIDConnectDemoTests.m */,
+				8BBE446319A723FD00D1E518 /* Supporting Files */,
+			);
+			path = EdaoOpenIDConnectDemoTests;
+			sourceTree = "<group>";
+		};
+		8BBE446319A723FD00D1E518 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8BBE446419A723FD00D1E518 /* EdaoOpenIDConnectDemoTests-Info.plist */,
+				8BBE446519A723FD00D1E518 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8BC7DC1019AC2A5B00247713 /* EdaoOpenIDConnectSDK */ = {
+			isa = PBXGroup;
+			children = (
+				8BC7DC1119AC2A6D00247713 /* EdaoOpenIDConnectSDK.a */,
+				8BC7DC1219AC2A6D00247713 /* include */,
+			);
+			name = EdaoOpenIDConnectSDK;
+			sourceTree = "<group>";
+		};
+		8BC7DC1219AC2A6D00247713 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				8BC7DC1319AC2A6D00247713 /* EdaoOpenIDConnectSDK */,
+			);
+			name = include;
+			path = "../../../bin/Debug-iphoneos/include";
+			sourceTree = "<group>";
+		};
+		8BC7DC1319AC2A6D00247713 /* EdaoOpenIDConnectSDK */ = {
+			isa = PBXGroup;
+			children = (
+				8BC7DC1419AC2A6D00247713 /* EdaoOpenIDConnectSDK.h */,
+			);
+			path = EdaoOpenIDConnectSDK;
+			sourceTree = "<group>";
+		};
+		8BC7DC4019AC63E500247713 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8BC7DC4119AC63E500247713 /* btn.png */,
+				8BC7DC4219AC63E500247713 /* demo1.png */,
+				8BC7DC4319AC63E500247713 /* demo2.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8BBE443919A723FD00D1E518 /* EdaoOpenIDConnectDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BBE446C19A723FD00D1E518 /* Build configuration list for PBXNativeTarget "EdaoOpenIDConnectDemo" */;
+			buildPhases = (
+				8BBE443619A723FD00D1E518 /* Sources */,
+				8BBE443719A723FD00D1E518 /* Frameworks */,
+				8BBE443819A723FD00D1E518 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EdaoOpenIDConnectDemo;
+			productName = EdaoOpenIDConnectDemo;
+			productReference = 8BBE443A19A723FD00D1E518 /* EdaoOpenIDConnectDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8BBE445A19A723FD00D1E518 /* EdaoOpenIDConnectDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BBE446F19A723FD00D1E518 /* Build configuration list for PBXNativeTarget "EdaoOpenIDConnectDemoTests" */;
+			buildPhases = (
+				8BBE445719A723FD00D1E518 /* Sources */,
+				8BBE445819A723FD00D1E518 /* Frameworks */,
+				8BBE445919A723FD00D1E518 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BBE446119A723FD00D1E518 /* PBXTargetDependency */,
+			);
+			name = EdaoOpenIDConnectDemoTests;
+			productName = EdaoOpenIDConnectDemoTests;
+			productReference = 8BBE445B19A723FD00D1E518 /* EdaoOpenIDConnectDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8BBE443219A723FD00D1E518 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "李嘉鑫";
+				TargetAttributes = {
+					8BBE445A19A723FD00D1E518 = {
+						TestTargetID = 8BBE443919A723FD00D1E518;
+					};
+				};
+			};
+			buildConfigurationList = 8BBE443519A723FD00D1E518 /* Build configuration list for PBXProject "EdaoOpenIDConnectDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8BBE443119A723FD00D1E518;
+			productRefGroup = 8BBE443B19A723FD00D1E518 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8BBE443919A723FD00D1E518 /* EdaoOpenIDConnectDemo */,
+				8BBE445A19A723FD00D1E518 /* EdaoOpenIDConnectDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8BBE443819A723FD00D1E518 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BBE445619A723FD00D1E518 /* Images.xcassets in Resources */,
+				8BC7DC4619AC63E500247713 /* demo2.png in Resources */,
+				8BBE444819A723FD00D1E518 /* InfoPlist.strings in Resources */,
+				8BC7DC4419AC63E500247713 /* btn.png in Resources */,
+				8BBE445119A723FD00D1E518 /* Main.storyboard in Resources */,
+				8BC7DC4519AC63E500247713 /* demo1.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BBE445919A723FD00D1E518 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BBE446719A723FD00D1E518 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8BBE443619A723FD00D1E518 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BC7DC4919AC642900247713 /* MasterViewController.m in Sources */,
+				8BBE444E19A723FD00D1E518 /* AppDelegate.m in Sources */,
+				8BBE444A19A723FD00D1E518 /* main.m in Sources */,
+				8BC7DC4C19AC643700247713 /* DoneViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BBE445719A723FD00D1E518 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BBE446919A723FD00D1E518 /* EdaoOpenIDConnectDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8BBE446119A723FD00D1E518 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8BBE443919A723FD00D1E518 /* EdaoOpenIDConnectDemo */;
+			targetProxy = 8BBE446019A723FD00D1E518 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8BBE444619A723FD00D1E518 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BBE444719A723FD00D1E518 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8BBE444F19A723FD00D1E518 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BBE445019A723FD00D1E518 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8BBE446519A723FD00D1E518 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BBE446619A723FD00D1E518 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8BBE446A19A723FD00D1E518 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8BBE446B19A723FD00D1E518 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8BBE446D19A723FD00D1E518 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EdaoOpenIDConnectDemo/EdaoOpenIDConnectDemo-Prefix.pch";
+				INFOPLIST_FILE = "EdaoOpenIDConnectDemo/EdaoOpenIDConnectDemo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../bin/Debug-iphoneos",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8BBE446E19A723FD00D1E518 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EdaoOpenIDConnectDemo/EdaoOpenIDConnectDemo-Prefix.pch";
+				INFOPLIST_FILE = "EdaoOpenIDConnectDemo/EdaoOpenIDConnectDemo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../bin/Debug-iphoneos",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8BBE447019A723FD00D1E518 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EdaoOpenIDConnectDemo.app/EdaoOpenIDConnectDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EdaoOpenIDConnectDemo/EdaoOpenIDConnectDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "EdaoOpenIDConnectDemoTests/EdaoOpenIDConnectDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		8BBE447119A723FD00D1E518 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EdaoOpenIDConnectDemo.app/EdaoOpenIDConnectDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EdaoOpenIDConnectDemo/EdaoOpenIDConnectDemo-Prefix.pch";
+				INFOPLIST_FILE = "EdaoOpenIDConnectDemoTests/EdaoOpenIDConnectDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8BBE443519A723FD00D1E518 /* Build configuration list for PBXProject "EdaoOpenIDConnectDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BBE446A19A723FD00D1E518 /* Debug */,
+				8BBE446B19A723FD00D1E518 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BBE446C19A723FD00D1E518 /* Build configuration list for PBXNativeTarget "EdaoOpenIDConnectDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BBE446D19A723FD00D1E518 /* Debug */,
+				8BBE446E19A723FD00D1E518 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BBE446F19A723FD00D1E518 /* Build configuration list for PBXNativeTarget "EdaoOpenIDConnectDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BBE447019A723FD00D1E518 /* Debug */,
+				8BBE447119A723FD00D1E518 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8BBE443219A723FD00D1E518 /* Project object */;
+}
