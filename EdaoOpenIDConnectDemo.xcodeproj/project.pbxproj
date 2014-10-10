@@ -20,12 +20,12 @@
 		8BBE445F19A723FD00D1E518 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BBE444119A723FD00D1E518 /* UIKit.framework */; };
 		8BBE446719A723FD00D1E518 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8BBE446519A723FD00D1E518 /* InfoPlist.strings */; };
 		8BBE446919A723FD00D1E518 /* EdaoOpenIDConnectDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BBE446819A723FD00D1E518 /* EdaoOpenIDConnectDemoTests.m */; };
-		8BC7DC1519AC2A6D00247713 /* EdaoOpenIDConnectSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC7DC1119AC2A6D00247713 /* EdaoOpenIDConnectSDK.a */; };
 		8BC7DC4419AC63E500247713 /* btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BC7DC4119AC63E500247713 /* btn.png */; };
 		8BC7DC4519AC63E500247713 /* demo1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BC7DC4219AC63E500247713 /* demo1.png */; };
 		8BC7DC4619AC63E500247713 /* demo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BC7DC4319AC63E500247713 /* demo2.png */; };
 		8BC7DC4919AC642900247713 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC7DC4819AC642900247713 /* MasterViewController.m */; };
 		8BC7DC4C19AC643700247713 /* DoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC7DC4B19AC643700247713 /* DoneViewController.m */; };
+		FF238F6719E7751A00DDF39B /* EdaoOpenIDConnectSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF238F6619E7751A00DDF39B /* EdaoOpenIDConnectSDK.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +65,8 @@
 		8BC7DC4819AC642900247713 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 		8BC7DC4A19AC643700247713 /* DoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoneViewController.h; sourceTree = "<group>"; };
 		8BC7DC4B19AC643700247713 /* DoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoneViewController.m; sourceTree = "<group>"; };
+		FF238EC819E6839C00DDF39B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		FF238F6619E7751A00DDF39B /* EdaoOpenIDConnectSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = EdaoOpenIDConnectSDK.a; path = EdaoOpenIDConnectSDK/EdaoOpenIDConnectSDK.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +74,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF238F6719E7751A00DDF39B /* EdaoOpenIDConnectSDK.a in Frameworks */,
 				8BBE444019A723FD00D1E518 /* CoreGraphics.framework in Frameworks */,
-				8BC7DC1519AC2A6D00247713 /* EdaoOpenIDConnectSDK.a in Frameworks */,
 				8BBE444219A723FD00D1E518 /* UIKit.framework in Frameworks */,
 				8BBE443E19A723FD00D1E518 /* Foundation.framework in Frameworks */,
 			);
@@ -95,6 +97,7 @@
 		8BBE443119A723FD00D1E518 = {
 			isa = PBXGroup;
 			children = (
+				FF238EC819E6839C00DDF39B /* README.md */,
 				8BBE444319A723FD00D1E518 /* EdaoOpenIDConnectDemo */,
 				8BBE446219A723FD00D1E518 /* EdaoOpenIDConnectDemoTests */,
 				8BBE443C19A723FD00D1E518 /* Frameworks */,
@@ -114,6 +117,7 @@
 		8BBE443C19A723FD00D1E518 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FF238F6619E7751A00DDF39B /* EdaoOpenIDConnectSDK.a */,
 				8BBE443D19A723FD00D1E518 /* Foundation.framework */,
 				8BBE443F19A723FD00D1E518 /* CoreGraphics.framework */,
 				8BBE444119A723FD00D1E518 /* UIKit.framework */,
@@ -431,16 +435,25 @@
 		8BBE446D19A723FD00D1E518 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EdaoOpenIDConnectDemo/EdaoOpenIDConnectDemo-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PROJECT_DIR}/EdaoOpenIDSDK/",
+				);
 				INFOPLIST_FILE = "EdaoOpenIDConnectDemo/EdaoOpenIDConnectDemo-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/../../bin/Debug-iphoneos",
+					"$(SRCROOT)/EdaoOpenIDConnectSDK/",
+					"$(PROJECT_DIR)/EdaoOpenIDConnectSDK",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "${PROJECT_DIR}/EdaoOpenIDConnectSDK/";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -448,16 +461,25 @@
 		8BBE446E19A723FD00D1E518 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EdaoOpenIDConnectDemo/EdaoOpenIDConnectDemo-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PROJECT_DIR}/EdaoOpenIDSDK/",
+				);
 				INFOPLIST_FILE = "EdaoOpenIDConnectDemo/EdaoOpenIDConnectDemo-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/../../bin/Debug-iphoneos",
+					"$(SRCROOT)/EdaoOpenIDConnectSDK/",
+					"$(PROJECT_DIR)/EdaoOpenIDConnectSDK",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "${PROJECT_DIR}/EdaoOpenIDConnectSDK/";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
