@@ -11,7 +11,7 @@ iOS快速集成指南 - 翼道 EdaoOpenIDConnectSDK
 第一步：将SDK导入到你的工程中
 ----
 
-  - 在github上下载EdaoOpenIDConnectSDK最新版本。如果您还尚未下载，请点击这里下载或者访问https://github.com/ 。解压后如下图
+  - SDK 默认不对外开放，请联系翼道相关负责人员进行索取 biz#edaotech.com 。解压后如下图
 
   ![Alt text](https://raw.githubusercontent.com/EdaoTechLtd/edao-openid-connect-demo-ios/master/doc/resources/1.png)
   
